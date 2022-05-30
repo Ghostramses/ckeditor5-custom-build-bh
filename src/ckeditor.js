@@ -36,80 +36,80 @@ class Editor extends DecoupledDocumentEditor {}
 
 // Plugins to include in the build.
 Editor.builtinPlugins = [
-	Alignment,
-	Autoformat,
-	BlockQuote,
-	Bold,
-	CKFinderUploadAdapter,
-	CloudServices,
-	Essentials,
-	FindAndReplace,
-	FontBackgroundColor,
-	FontColor,
-	FontFamily,
-	FontSize,
-	Heading,
-	Indent,
-	IndentBlock,
-	Italic,
-	Link,
-	List,
-	ListProperties,
-	Paragraph,
-	PasteFromOffice,
-	Strikethrough,
-	Table,
-	TableCellProperties,
-	TableProperties,
-	TableToolbar,
-	TextTransformation,
-	Underline
+  Alignment,
+  Autoformat,
+  BlockQuote,
+  Bold,
+  CKFinderUploadAdapter,
+  CloudServices,
+  Essentials,
+  FindAndReplace,
+  FontBackgroundColor,
+  FontColor,
+  FontFamily,
+  FontSize,
+  Heading,
+  Indent,
+  IndentBlock,
+  Italic,
+  Link,
+  List,
+  ListProperties,
+  Paragraph,
+  PasteFromOffice,
+  Strikethrough,
+  Table,
+  TableCellProperties,
+  TableProperties,
+  TableToolbar,
+  TextTransformation,
+  Underline
 ];
 
 // Editor configuration.
 Editor.defaultConfig = {
-	toolbar: {
-		items: [
-			'heading',
-			'|',
-			'fontSize',
-			'fontFamily',
-			'|',
-			'fontColor',
-			'fontBackgroundColor',
-			'|',
-			'bold',
-			'italic',
-			'underline',
-			'strikethrough',
-			'|',
-			'alignment',
-			'|',
-			'numberedList',
-			'bulletedList',
-			'|',
-			'outdent',
-			'indent',
-			'|',
-			'link',
-			'blockQuote',
-			'insertTable',
-			'|',
-			'undo',
-			'redo',
-			'findAndReplace'
-		]
-	},
-	language: 'es',
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells',
-			'tableCellProperties',
-			'tableProperties'
-		]
-	}
+  toolbar: {
+    items: [
+      'heading',
+      '|',
+      'fontSize',
+      'fontFamily',
+      '|',
+      'fontColor',
+      'fontBackgroundColor',
+      '|',
+      'bold',
+      'italic',
+      'underline',
+      'strikethrough',
+      '|',
+      'alignment',
+      '|',
+      'numberedList',
+      'bulletedList',
+      '|',
+      'outdent',
+      'indent',
+      '|',
+      'link',
+      'blockQuote',
+      'insertTable',
+      '|',
+      'findAndReplace',
+      'undo',
+      'redo'
+    ]
+  },
+  language: 'es',
+  table: {
+    contentToolbar: [
+      'tableColumn',
+      'tableRow',
+      'mergeTableCells',
+      'tableCellProperties',
+      'tableProperties'
+    ]
+  }
 };
 
 export default Editor;
