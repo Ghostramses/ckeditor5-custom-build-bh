@@ -4,7 +4,6 @@
  */
 import DecoupledDocumentEditor from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor.js';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
-import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
 import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
@@ -31,6 +30,7 @@ import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import { CustomAutoformat as Autoformat } from './plugins/Autoformat';
 
 class Editor extends DecoupledDocumentEditor {}
 
