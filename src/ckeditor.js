@@ -91,11 +91,12 @@ Editor.defaultConfig = {
       'outdent',
       'indent',
       '|',
+      'findAndReplace',
+      '|',
       'link',
       'blockQuote',
       'insertTable',
       '|',
-      'findAndReplace',
       'undo',
       'redo'
     ]
