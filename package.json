@@ -1,10 +1,10 @@
 {
-  "name": "ckeditor5-blackhole-custom-build",
+  "name": "@ghostramses/ckeditor5-blackhole-custom-build",
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "0.0.1",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "version": "0.0.3",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE.md",
   "main": "./build/ckeditor.js",
   "devDependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "^34.1.0",
@@ -39,5 +39,13 @@
   },
   "scripts": {
     "build": "webpack --mode production"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghostramses/ckeditor5-custom-build-bh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ghostramses/ckeditor5-custom-build-bh/issues"
+  },
+  "homepage": "https://github.com/Ghostramses/ckeditor5-custom-build-bh#readme"
 }
