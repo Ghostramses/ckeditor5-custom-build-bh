@@ -26,7 +26,7 @@ class CustomAutoformat extends Autoformat {
       inlineAutoformatEditing(
         this.editor,
         this,
-        /(\*\*)(Hombre [1-9]{1}\d*|Mujer [1-9]{1}\d*)(\*\*)/g,
+        /(\*\*)(Hombre [1-9]{1}\d*:|Mujer [1-9]{1}\d*:)(\*\*)/g,
         boldCallback
       );
     }
