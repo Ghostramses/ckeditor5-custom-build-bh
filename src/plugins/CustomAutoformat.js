@@ -19,14 +19,14 @@ class CustomAutoformat extends Autoformat {
       inlineAutoformatEditing(
         this.editor,
         this,
-        /(\*\*)(Hombre:|Mujer:)(\*\*)/g,
+        /(?:^|\s)(\*\*)(Hombre:|Mujer:)(\*\*)$/g,
         boldCallback
       );
 
       inlineAutoformatEditing(
         this.editor,
         this,
-        /(\*\*)(Hombre [1-9]{1}\d*:|Mujer [1-9]{1}\d*:)(\*\*)/g,
+        /(?:^|\s)(\*\*)(Hombre [1-9]{1}\d*:|Mujer [1-9]{1}\d*:)(\*\*)$/g,
         boldCallback
       );
     }
