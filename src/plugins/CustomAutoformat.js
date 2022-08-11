@@ -1,5 +1,5 @@
-import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
-import inlineAutoformatEditing from '@ckeditor/ckeditor5-autoformat/src/inlineautoformatediting';
+import Autoformat from "@ckeditor/ckeditor5-autoformat/src/autoformat";
+import inlineAutoformatEditing from "./custominlineautoformatediting";
 
 class CustomAutoformat extends Autoformat {
   afterInit() {
@@ -10,10 +10,10 @@ class CustomAutoformat extends Autoformat {
   _addManWomanAutoformats() {
     const commands = this.editor.commands;
 
-    if (commands.get('bold')) {
+    if (commands.get("bold")) {
       const boldCallback = getCallbackFunctionForInlineAutoformat(
         this.editor,
-        'bold'
+        "bold"
       );
 
       inlineAutoformatEditing(
