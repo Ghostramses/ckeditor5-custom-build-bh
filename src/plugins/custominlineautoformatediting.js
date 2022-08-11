@@ -143,7 +143,8 @@ export default function inlineAutoformatEditing(
 
     //Typing transformations are represented by two changes
     //remove and insert
-    if (changes.length !== 2) {
+
+    if (changes.length < 2) {
       return;
     }
 

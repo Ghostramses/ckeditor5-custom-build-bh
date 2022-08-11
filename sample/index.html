@@ -59,8 +59,19 @@
 					typing:{
 						transformations: {
 							include: [
-								{ from: 'H0', to: '++Hombre:++' },
-								{ from: 'M0', to: 'Mujer:' },
+							{ from: /(^)(H0)(\b|$)/, to: [null, '++Hombre:++', null] },
+							{ from: /(^)(M0)(\b|$)/, to: [null, '++Mujer:++', null] },
+							{
+                                from: /(^)(H|h|M|m)([1-9]{1})(\b|$)/,
+                                to: (matches) => [
+                                null,
+                                `++${matches[1]}${
+                                matches[1] === 'h' || matches[1] === 'H' ? 'ombre' : 'ujer'
+                                } `,
+                                `${matches[2]}:++`,
+                                null
+                            	]
+                                },
 							]
 						}
 					}
